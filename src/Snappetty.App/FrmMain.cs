@@ -6,5 +6,12 @@ namespace Snappetty.App
         {
             InitializeComponent();
         }
+
+        private void btnCapture_Click(object sender, EventArgs e)
+        {
+            var captureForm = new FrmCapture();
+            this.Hide();
+            captureForm.Show();
+        }
     }
 }

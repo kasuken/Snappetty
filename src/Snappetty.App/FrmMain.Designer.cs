@@ -33,26 +33,28 @@
             // 
             // btnCapture
             // 
-            this.btnCapture.Location = new System.Drawing.Point(0, 0);
+            this.btnCapture.Location = new System.Drawing.Point(23, 12);
             this.btnCapture.Name = "btnCapture";
-            this.btnCapture.Size = new System.Drawing.Size(217, 46);
+            this.btnCapture.Size = new System.Drawing.Size(190, 40);
             this.btnCapture.TabIndex = 0;
-            this.btnCapture.Text = "Capture";
+            this.btnCapture.Text = "Capture!";
             this.btnCapture.UseVisualStyleBackColor = true;
+            this.btnCapture.Click += new System.EventHandler(this.btnCapture_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1088, 667);
+            this.ClientSize = new System.Drawing.Size(234, 67);
+            this.Controls.Add(this.btnCapture);
             this.Name = "FrmMain";
             this.Text = "Snappetty";
             this.ResumeLayout(false);
 
         }
 
-        private System.Windows.Forms.Button btnCapture;
-
         #endregion
+
+        private Button btnCapture;
     }
 }
